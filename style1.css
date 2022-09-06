@@ -1,0 +1,428 @@
+/* Reset CSS */
+
+
+
+    body {
+        font-family: 'Roboto', sans-serif;
+      }
+      
+      
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      
+      /* Corps de la page */
+    
+      .conteneur-en-tete {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    
+      }
+      
+      .logo {
+        width: 100%;
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }  
+
+      .icone {
+        margin-left: 5%;
+      }
+
+      .icone a {
+        color: grey;
+      }
+
+      .image-menu1 img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        z-index: -1;
+        position: relative;
+      }
+
+      /* Menu La palette du goût Entrées + Plats + Desserts */
+
+
+      .conteneur-menu1 {
+        width: 100%;
+        z-index: 100;
+        background-color: #efefef;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        margin-top: -40px;
+        position: relative;
+        padding-bottom: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+      }
+      
+      .menu1-titre h1 {
+        padding-top: 30px;
+        margin-left: 22px;
+        font-family: 'Shrikhand';
+        font-size: 30px;
+      }
+
+      .coeur {
+        width: 35px;
+        height: 35px;
+        margin-top: -25px;
+        position: relative;
+        font-size: 20px;
+        float: right;
+        padding-right: 6%;
+      }
+      .coeur i {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    
+      .coeur .coeurvide {
+        /*
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: right;
+        padding-right: 5%;
+        
+        
+        
+        z-index: 1;
+      */  
+      color: gray; 
+      }
+      
+      .coeur .coeurplein {
+        /*
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: right;
+        
+        margin-top: -20px;
+        padding: 0;
+        z-index: 2;
+        */
+        background: linear-gradient(120deg,#FF79DA 0%,#9356DC 100%);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0;
+      }  
+      
+      .coeur .coeurplein:hover {
+       
+        transition: 2s;
+        opacity: 1;
+        
+      }
+
+      .conteneur-menu1 h3 {
+        padding-top: 20px;
+        margin-left: 22px;
+        padding-bottom: 5px;
+        font-weight: 300;
+        border-bottom-style: solid;
+        border-color: #99E2D0;
+        width: 2.5%;
+        
+      }
+
+      .conteneur-menu1 h4 {
+        margin-left: 13px;
+        line-height: 2;
+        font-size: 18px;
+        margin-top: 8px;
+        padding-top: 5px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: black;
+      }
+
+
+      .conteneur-menu1 p {
+        margin-left: 13px;
+        font-size: 16px;
+        font-weight: lighter;
+        padding-bottom: 5px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        text-decoration: none;
+        
+      }
+
+      .conteneur-menu1 a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .tarif p {
+        float: right;
+        margin-right: 20px;
+        font-weight: bolder;
+        margin-top: -23px;
+      }
+
+      .conteneur-type-plat {
+        max-width: 500px;
+        border-radius: 20px;
+        background-color: white;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 20%);
+        animation-delay: 1s, 5s, 12s;
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+      
+      }
+
+      .conteneur-type-plat .entrees {
+        animation-delay: 1s, 3s, 4s;
+      }
+
+      .conteneur-type-plat .menu1 {
+        animation: fadein 1s;
+        -webkit-animation: fadein 1s;
+      }
+
+      .conteneur-type-plat .menu2 {
+        animation: fadein 3s;
+        -webkit-animation: fadein 3s;
+      }
+
+      .conteneur-type-plat .menu3 {
+        animation: fadein 4s;
+        -webkit-animation: fadein 4s;
+        
+      }
+
+      .conteneur-type-plat .plats {
+        animation-delay: 5s;
+      }
+      
+      .conteneur-type-plat .menu4 {
+        animation: fadein 1s;
+        -webkit-animation: fadein 1s;
+      }
+
+      .conteneur-type-plat .menu5 {
+        animation: fadein 3s;
+        -webkit-animation: fadein 3s;
+      }
+
+      .conteneur-type-plat .menu6 {
+        animation: fadein 4s;
+        -webkit-animation: fadein 4s;
+      }
+
+      .conteneur-desserts {
+        animation-delay: 12s;
+      }
+
+      .conteneur-type-plat .menu7 {
+        animation: fadein 1s;
+        -webkit-animation: fadein 1s;
+      }
+
+      .conteneur-type-plat .menu8 {
+        animation: fadein 2s;
+        -webkit-animation: fadein 2s;
+      }
+      
+      .conteneur-type-plat .menu9 {
+        animation: fadein 3s;
+        -webkit-animation: fadein 3s;
+      }
+
+
+@keyframes fadein { 
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+
+@-webkit-keyframes fadein { 
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+     
+      .validation {
+        width: 65px;
+        height: 75px;
+        float: right;
+        background-color: #99E2D0;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        
+      }
+
+      .conteneur-icon  {
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        background-color: white;
+        margin-left: 14px;
+        margin-top: 22px;
+        
+       
+      }
+
+      .conteneur-icon i {
+        color: #99E2D0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 8px;
+        
+      }
+      
+
+      .bouton a {
+        width: 60%;
+        max-width: 90%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 50px;
+        border: none solid;
+        border-radius: 30px;
+        background: linear-gradient(0deg, #9356DC, #FF79DA);
+        text-decoration: none;
+        color: white;
+        font-size: large;
+      }
+
+      .bouton a:hover {
+        box-shadow: 1px 10px 8px rgb(130 130 130 / 90%);
+        opacity: 0.7;
+
+      }
+
+      /* Pied de page */
+
+    .conteneur-footer {
+        width: 100%;
+        height: 250px;
+        background-color: dimgray;
+
+    }
+
+    .conteneur-logo {
+        width: 70%;
+        height: 20px;
+        padding-top: 25px;
+    }
+
+    .logo-footer {
+        font-family: 'Shrikhand';
+        font-style: oblique;
+        font-size: small;
+        color: white;
+        margin-left: 22px;
+    }
+
+    .conteneur-proposer-un-restaurant {
+        width: 90%;
+        height: 20px;
+        margin-top: 15px;
+        margin-left: 22px;
+    }
+
+    .conteneur-icone-1 {
+        width: 20px;
+        height: 20px;
+        padding-top: 20px;
+        
+    } 
+
+    .conteneur-icone-1 i {
+        color: white;
+    }
+
+    .conteneur-texte-1 {
+        margin-left: 30px;
+        
+    }
+
+    .conteneur-texte-1 a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .conteneur-devenir-partenaire {
+        width: 90%;
+        height: 20px;
+        margin-top: 10px;
+        margin-left: 22px;
+    }
+
+    .conteneur-icone-2 {
+        width: 20px;
+        height: 20px;
+        padding-top: 20px;
+    }
+
+    .conteneur-icone-2 i {
+        color: white;
+    }
+
+    .conteneur-texte-2 {
+        margin-left: 30px;
+    }
+
+    .conteneur-texte-2 a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .conteneur-mentions-legales {
+        padding-top: 30px;
+        margin-left: 22px;
+    }
+
+    .conteneur-mentions-legales a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .conteneur-contact {
+        padding-top: 10px;
+        margin-left: 22px;
+    }
+
+    .conteneur-contact a {
+        color: white;
+        text-decoration: none;
+    }
+
