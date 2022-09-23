@@ -84,6 +84,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
   }
   
   
@@ -266,7 +267,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding: 3px;
     }
   .conteneur-icone-bouton-choix-restaurant {
     width: 30px;
@@ -341,7 +342,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding: 3px;
   }
 
   .conteneur-icone-bouton-menu-restaurant {
@@ -416,7 +417,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding: 3px;
   }
 
   .conteneur-icone-bouton-degustation-restaurant {
@@ -687,7 +688,17 @@ body {
     text-decoration: none;
   }
 
+  @media screen and (min-width:768px) {
+    .conteneur-restaurants {
+      flex-direction: row;
+    }
 
+
+
+
+
+
+  }
 
 
 
