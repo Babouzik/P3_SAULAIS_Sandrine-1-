@@ -66,8 +66,8 @@ body {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     position: relative;
-    padding-bottom: 30px;
     margin-top: -40px;
+    margin-bottom: -30px;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -156,6 +156,8 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    text-decoration: none;
+    color: black;
   }
 
   .conteneur-menus h3 {
@@ -193,11 +195,6 @@ body {
     line-height: 2;
   }
 
-  .conteneur-menus a {
-    text-decoration: none;
-    color: black;
-  }
-
   .tarif p {
     float: right;
     font-weight: bolder;
@@ -217,99 +214,35 @@ body {
     box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 20%);
     display: flex;
     flex-direction: row;
-    animation: fadein 0.2s;
-    -webkit-animation: fadein 0.2s;
-  }
+    animation: fadein 2.2s;
+    -webkit-animation: fadein 2.2s;
 
-  .conteneur-type-plat .menu1 {
-    flex: 1;
-    height: auto;
-    animation: fadein 0.2s;
-    -webkit-animation: fadein 0.2s;
   }
-
-  .conteneur-type-plat .menu2 {
-    flex: 1;
-    height: auto;
-    animation: fadein 0.4s;
-    -webkit-animation: fadein 0.4s;
-  }
-
-  .conteneur-type-plat .menu3 {
-    flex: 1;
-    height: auto;
-    animation: fadein 0.6s;
-    -webkit-animation: fadein 0.6s;
-    
-  }
- 
-  .conteneur-type-plat .menu4 {
-    flex: 1;
-    height: auto;
-    animation: fadein 0.8s;
-    -webkit-animation: fadein 0.8s;
-  }
-
-  .conteneur-type-plat .menu5 {
-    flex: 1;
-    height: auto;
-    animation: fadein 0.2s;
-    -webkit-animation: fadein 0.2s;
-  }
-
-  .conteneur-type-plat .menu6 {
-    flex: 1;
-    height: auto;
-    animation: fadein 0.4s;
-    -webkit-animation: fadein 0.4s;
-  }
-
-  .conteneur-type-plat .menu7 {
-    flex: 1;
-    height: auto;
-    animation: fadein 0.6s;
-    -webkit-animation: fadein 0.6s;
-  }
-
-  .conteneur-type-plat .menu8 {
-    flex: 1;
-    height: auto;
-    animation: fadein 0.2s;
-    -webkit-animation: fadein 0.2s;
+  .conteneur-type-plat:first-child {
+    animation: fadein 1.2s;
+    -webkit-animation: fadein 1.2s;
   }
   
-  .conteneur-type-plat .menu9 {
-    flex: 1;
-    height: auto;
-    animation: fadein 0.4s;
-    -webkit-animation: fadein 0.4s;
+  .conteneur-type-plat:last-child {
+    animation: fadein 3.2s;
+    -webkit-animation: fadein 3.2s;
   }
 
-  .conteneur-type-plat .menu10 {
+  .conteneur-type-plat .menu {
     flex: 1;
     height: auto;
-    animation: fadein 0.6s;
-    -webkit-animation: fadein 0.6s;
+    
   }
-
+  
   @keyframes fadein { 
   from {
-    opacity: 1;
+    opacity: 0;
   }
   to   {
-    opacity: 0;
+    opacity: 1;
   }
   }
 
-  @-webkit-keyframes fadein { 
-  from {
-    opacity: 1;
-  }
-  to   {
-    opacity: 0;
-  }
-  }
- 
   .validation {
   width: 0;
   height: auto;
@@ -380,8 +313,8 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 40px;
-    padding-top: 20px;
+    padding-bottom: 80px;
+    padding-top: 30px;
     background-color: #efefef;
   }
 
@@ -508,6 +441,11 @@ body {
 
 @media screen and (min-width:768px) {
 
+  .conteneur-titre {
+    padding-bottom: 30px;
+    margin-bottom: 0px;
+  }
+
   .menu2-titre h1 {
     padding-left: 70px;
   }
@@ -548,7 +486,7 @@ body {
   }
 
   .bouton a {
-    margin-top: 50px;
+    margin-top: 40px;
   }
 }
 

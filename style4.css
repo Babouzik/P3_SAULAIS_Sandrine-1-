@@ -66,8 +66,8 @@ body {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     position: relative;
-    padding-bottom: 30px;
     margin-top: -40px;
+    margin-bottom: -30px;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -228,62 +228,11 @@ body {
     animation: fadein 3.2s;
     -webkit-animation: fadein 3.2s;
   }
-  .conteneur-type-plat .menu1 {
+  .conteneur-type-plat .menu {
     flex: 1;
     height: auto;
     
   }
-
-  .conteneur-type-plat .menu2 {
-    flex: 1;
-    height: auto;
-    
-  }
-
-  .conteneur-type-plat .menu3 {
-    flex: 1;
-    height: auto;
-    
-   
-    
-  }
-  
-  .conteneur-type-plat .menu4 {
-    flex: 1;
-    height: auto;
-    
-  }
-
-  .conteneur-type-plat .menu5 {
-    flex: 1;
-    height: auto;
-    
-  }
-
-  .conteneur-type-plat .menu6 {
-    flex: 1;
-    height: auto;
-    
-  }
-
-  .conteneur-type-plat .menu7 {
-    flex: 1;
-    height: auto;
-    
-  }
-
-  .conteneur-type-plat .menu8 {
-    flex: 1;
-    height: auto;
-    
-  }
-  
-  .conteneur-type-plat .menu9 {
-    flex: 1;
-    height: auto;
-    
-  }
-
 
   @keyframes fadein { 
     from {
@@ -293,7 +242,6 @@ body {
       opacity: 1;
   }
   }
-
  
   .validation {
   width: 0;
@@ -365,8 +313,8 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 40px;
-    padding-top: 20px;
+    padding-bottom: 80px;
+    padding-top: 30px;
     background-color: #efefef;
   }
 
@@ -493,6 +441,11 @@ body {
 
 @media screen and (min-width:768px) {
 
+  .conteneur-titre {
+    padding-bottom: 30px;
+    margin-bottom: 0px;
+  }
+  
   .menu4-titre h1 {
     padding-left: 70px;
   }
@@ -533,7 +486,7 @@ body {
   }
 
   .bouton a {
-    margin-top: 50px;
+    margin-top: 40px;
   }
 }
 
