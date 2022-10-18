@@ -58,7 +58,7 @@
 
 @keyframes loader-div {
   0% { opacity: 100%;
-   /* display: block; */
+   
   }
   99% { opacity: 40%;
 
